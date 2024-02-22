@@ -23,6 +23,12 @@
   margin-bottom: 2em;
 }
 
+.container {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+}
+
 .blogContainer {
   max-width: 800px;
   margin: 0 auto;
