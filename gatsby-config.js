@@ -12,7 +12,7 @@ module.exports = {
     title: `Gatsby Blog page`,
     description: `A simple gatsby blog page`,
     author: `Kacper Hildebrandt`,
-    siteUrl: `HildebrandtK.github.io/gatsby-blog`,
+    siteUrl: `http://hildebrandtk.gtihub.io/gatsby-blog`,
   },
   plugins: [
     {
