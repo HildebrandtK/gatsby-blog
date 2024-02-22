@@ -1,0 +1,22 @@
+.blogContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blogPost {
+  margin-bottom: 2rem;
+}
+
+.postTitle {
+  margin-bottom: 0.5rem;
+}
+
+.postLink {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.postLink:hover {
+  text-decoration: underline;
+}
