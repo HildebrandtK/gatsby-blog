@@ -4,18 +4,28 @@ import * as styles from "../styles/blog.module.css"
 
 export default function Blog({ data }) {
   return (
-    <div className={styles.blogContainer}>
-      <h1>Blog</h1>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id} className={styles.blogContainer}>
-          <h3 className={styles.postTitle}>
+    <div className={styles.container}>
+      <header className={styles.header}>
+        <h1 className={styles.title}>Blog Title</h1>
+        {/* Additional header content */}
+      </header>
+
+      <div className={styles.contentArea}>
+        {/* Blog posts list */}
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <article key={node.id}>
+            <h2 className={styles.title}>{node.frontmatter.title}</h2>
+            <p className={styles.author}>{node.frontmatter.author}</p>
+            <p className={styles.date}>{node.frontmatter.date}</p>
+            <div className={styles.content}>{node.excerpt}</div>
             <Link to={node.fields.slug} className={styles.postLink}>
-              {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
+              Read More
             </Link>
-          </h3>
-          <p>{node.excerpt}</p>
-        </div>
-      ))}
+          </article>
+        ))}
+      </div>
+
+      <footer className={styles.footer}>{/* Footer content */}</footer>
     </div>
   )
 }

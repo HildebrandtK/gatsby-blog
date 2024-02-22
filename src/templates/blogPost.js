@@ -6,14 +6,18 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark
 
   return (
-    <div className={styles.postContainer}>
-      <h1 className={styles.title}>{post.frontmatter.title}</h1>
-      <p className={styles.date}>{post.frontmatter.date}</p>
-      <div
-        className={styles.content}
+    <article className={styles.container}>
+      <header className={styles.header}>
+        <h1 className={styles.title}>{post.frontmatter.title}</h1>
+        <p className={styles.author}>By {post.frontmatter.author}</p>
+        <p className={styles.date}>{post.frontmatter.date}</p>
+      </header>
+      <section
+        className={styles.contentArea}
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
-    </div>
+      <footer className={styles.footer}>{/* Footer content */}</footer>
+    </article>
   )
 }
 
@@ -23,6 +27,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
         date(formatString: "MMMM DD, YYYY")
       }
     }
