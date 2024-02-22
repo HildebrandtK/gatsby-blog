@@ -1,20 +1,60 @@
-.postContainer {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+/* blogPost.module.css */
+/* Similar base styling, adjusted for individual blog post context */
+
+.body {
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
-  font-size: 2rem;
-  color: #333;
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
+.author,
 .date {
-  font-size: 1rem;
+  font-size: 0.9em;
   color: #666;
-  margin-bottom: 20px;
+  font-style: italic;
 }
 
 .content {
+  font-size: 1em;
   line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.container {
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+}
+
+.header,
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.contentArea {
+  background-color: #fff;
+  padding: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
 }
