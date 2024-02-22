@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Head } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
@@ -24,6 +24,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
