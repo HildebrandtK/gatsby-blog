@@ -1,5 +1,8 @@
-/* blogPost.module.css */
-/* Similar base styling, adjusted for individual blog post context */
+.postContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 .body {
   font-family: "Roboto", sans-serif;
