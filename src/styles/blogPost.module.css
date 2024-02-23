@@ -4,8 +4,8 @@
   padding: 20px;
 }
 
-.body {
-  font-family: "Roboto", sans-serif;
+body {
+  font-family: Roboto, sans-serif;
 }
 
 .title {
@@ -34,7 +34,7 @@
 
 .header,
 .footer {
-  background-color: #f0f0f0;
+  background-color: #bbd8f1;
   padding: 20px;
   text-align: center;
 }
