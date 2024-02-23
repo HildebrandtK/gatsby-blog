@@ -18,6 +18,7 @@ body {
   font-size: 0.9em;
   color: #666;
   font-style: italic;
+  color: white;
 }
 
 .content {
@@ -34,14 +35,16 @@ body {
 
 .header,
 .footer {
-  background-color: #bbd8f1;
+  background-color: #8fc1b5;
   padding: 20px;
   text-align: center;
+  color: white;
 }
 
 .contentArea {
-  background-color: #fff;
+  background-color: #fdf9fc;
   padding: 20px;
+  line-height: 1.6;
 }
 
 a {
