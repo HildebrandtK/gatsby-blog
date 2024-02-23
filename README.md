@@ -34,7 +34,7 @@ For a static website, I’d focus on:
 -  LCP (largest contentful paint) which measures the time it takes for the largest content element (such as an image in a blog post) visible within the viewport to load. (Bad LCP means, for example, that the user sees the text of an article but waits for a header image to load)
 - FCP (first contentful paint) which marks the time at which the first piece of content is visible (E.g. after entering a site, how long does it take for an article to appear.
 - CLS (cumulative layout shift) which measures the visual stability of a site by quantifying how much visible content shifts (moves around) during the loading phase. (Bad CLS means that, for example, upon clicking a link to an article the user sees the text first at the top of the page, but then the text jumps below because the image above the text rendered later)
-- 
+
 These variables can be measured with easy-to-use tools like Google’s Lighthouse and in case of using Cloudflare to host the site, they should all be visible in a site’s dashboard.
 
 
