@@ -6,12 +6,10 @@ export default function Blog({ data }) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Blog Title</h1>
-        {/* Additional header content */}
+        <h1 className={styles.title}>Gatsby Blog</h1>
       </header>
 
       <div className={styles.contentArea}>
-        {/* Blog posts list */}
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <article key={node.id}>
             <h2 className={styles.title}>{node.frontmatter.title}</h2>
@@ -25,7 +23,9 @@ export default function Blog({ data }) {
         ))}
       </div>
 
-      <footer className={styles.footer}>{/* Footer content */}</footer>
+      <footer className={styles.footer}>
+        <h3> Gatsby Blog made by Kacper Hildebrandt </h3>
+      </footer>
     </div>
   )
 }

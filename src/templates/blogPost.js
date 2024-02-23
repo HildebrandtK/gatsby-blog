@@ -1,4 +1,5 @@
 import React from "react"
+import { FaHeart, FaShareAlt, FaComment } from "react-icons/fa"
 import { graphql } from "gatsby"
 import * as styles from "../styles/blogPost.module.css"
 
@@ -16,7 +17,11 @@ export default function BlogPost({ data }) {
         className={styles.contentArea}
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
-      <footer className={styles.footer}>{/* Footer content */}</footer>
+      <footer className={styles.footer}>
+        <FaHeart className={styles.icon} aria-label="like" />
+        <FaShareAlt className={styles.icon} aria-label="share" />
+        <FaComment className={styles.icon} aria-label="comment" />
+      </footer>
     </article>
   )
 }
