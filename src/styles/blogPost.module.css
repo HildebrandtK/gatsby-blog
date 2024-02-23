@@ -34,14 +34,16 @@ body {
 
 .header,
 .footer {
-  background-color: #bbd8f1;
+  background-color: #dfdfdf;
   padding: 20px;
   text-align: center;
+  color: black;
 }
 
 .contentArea {
-  background-color: #fff;
+  background-color: #fdf9fc;
   padding: 20px;
+  line-height: 1.6;
 }
 
 a {
@@ -60,4 +62,14 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: white;
 }
